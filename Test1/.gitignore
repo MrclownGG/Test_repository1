@@ -1,0 +1,177 @@
+# ==================================================
+# Python 项目通用 .gitignore 模板
+# 覆盖5大共识忽略项
+# ==================================================
+
+# ------------------------------------------------------------
+# 1. Python 缓存和编译产物（自动生成，无需追踪）
+# ------------------------------------------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ------------------------------------------------------------
+# 2. 虚拟环境（本地可重建，不跨机器同步）
+# ------------------------------------------------------------
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+conda/
+.conda/
+pip-wheel-metadata/
+
+# ------------------------------------------------------------
+# 3. 密钥和敏感配置（安全红线，绝对不能提交）
+# ------------------------------------------------------------
+.env.local
+.env.development
+.env.test
+*.env
+config.py
+config.private.py
+secrets.py
+*.key
+*.pem
+*.crt
+*.p12
+*.pfx
+id_rsa
+id_dsa
+*.secret
+
+# 例外：允许提交配置模板
+!config.example.py
+!config.template.py
+!*.example.env
+
+# ------------------------------------------------------------
+# 4. IDE和编辑器配置（个人偏好，不属于项目）
+# ------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.vscode-test/
+.vscode-server/
+*.sublime-project
+*.sublime-workspace
+.pydevproject
+.project
+.settings/
+
+# ------------------------------------------------------------
+# 5. 操作系统垃圾文件（无关噪音）
+# ------------------------------------------------------------
+# macOS
+.DS_Store
+.AppleDouble
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.fuse_hidden*
+.Trash-*
+.nfs*
+
+# ------------------------------------------------------------
+# 6. 测试和覆盖率报告（本地生成）
+# ------------------------------------------------------------
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+.coverage
+
+# ------------------------------------------------------------
+# 7. 日志和数据库（运行时生成）
+# ------------------------------------------------------------
+*.log
+*.sqlite
+*.db
+*.sqlite3
+*.db-journal
+
+# ------------------------------------------------------------
+# 8. 临时文件
+# ------------------------------------------------------------
+*.tmp
+*.temp
+*.swp
+*.bak
+*.backup
+
+# ------------------------------------------------------------
+# 9. Jupyter Notebook
+# ------------------------------------------------------------
+.ipynb_checkpoints
+
+# ------------------------------------------------------------
+# 10. 其他工具
+# ------------------------------------------------------------
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre
+.pyre/
+
+# Rope项目重构工具
+.ropeproject
+
+# mkdocs
+/site
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# celery
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
